@@ -1,7 +1,15 @@
 # repro-styles
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+A reproduction of hot-reloading of styles not working when using the strategy
+of importing styles from `app.js`.
+
+To reproduce the issue:
+1. pnpm install
+2. pnpm start
+3. Open the browser and navigate to http://localhost:4200. Open the console.
+4. Observer 'App loaded' in the console.
+5. Edit `app/assets/styles/style.css` and save. See `App loaded` in the console again, indicating a full app-reload has happened.
+6. Edit `app/styles/app.css` and save. Do NOT see `App loaded` in the console, indicating hot-reloading of the styles.
 
 ## Prerequisites
 

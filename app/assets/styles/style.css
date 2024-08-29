@@ -1,0 +1,4 @@
+body {
+  /* Change blue to 'pink' or other and see 'App loaded' in the console -- the full app reloads when editing these styles */
+  border: 10px solid blue;
+}
